@@ -1,17 +1,17 @@
+name: My plan
+level: beginner
+update_id: d5bbc927-8651-4916-8618-48b02bbf6afb
+author: Jit
+version: 0.1
 owners:
   default: null
-name: My plan
-author: Jit
-items:
-  - name: Scan code for hard-coded secrets
-    uses: jitsecurity-controls/jit-plans/items/code/item-secret-detection.yml@latest
-  - name: Scan code for vulnerabilities
-    uses: >-
-      jitsecurity-controls/jit-plans/items/code/item-code-vulnerability.yml@latest
-  - name: Scan code dependencies for vulnerabilities
-    uses: jitsecurity-controls/jit-plans/items/code/item-dependency-check.yml@latest
-level: beginner
-version: 0.1
 references:
   - https://www.jit.io
 tags: []
+items:
+  - name: Scan code for vulnerabilities
+    uses: jitsecurity-controls/jit-plans/items/code/item-code-vulnerability.yml@latest
+  - name: Scan code dependencies for vulnerabilities
+    uses: jitsecurity-controls/jit-plans/items/code/item-dependency-check.yml@latest
+  - name: Scan code for hard-coded secrets
+    uses: jitsecurity-controls/jit-plans/items/code/item-secret-detection.yml@latest
